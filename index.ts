@@ -80,7 +80,7 @@ const participationCerts = async () => {
 	try {
 		participantData.forEach(async (user) => {
 			let pdfData = readFileSync(
-				resolve(__dirname, './Certificates/Pariticipation Certificate.pdf')
+				resolve(__dirname, './Certificates/Participation Certificate.pdf')
 			);
 			const pdfDoc = await PDFDocument.load(pdfData);
 			pdfDoc.registerFontkit(fontkit);
